@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<!--
+██████╗  ██████╗ ███╗   ██╗██╗███████╗██╗███████╗██████╗      ██████╗ ██████╗    
+██╔══██╗██╔═══██╗████╗  ██║██║██╔════╝██║██╔════╝██╔══██╗    ██╔════╝██╔═══██╗   
+██████╔╝██║   ██║██╔██╗ ██║██║█████╗  ██║█████╗  ██████╔╝    ██║     ██║   ██║   
+██╔══██╗██║   ██║██║╚██╗██║██║██╔══╝  ██║██╔══╝  ██╔══██╗    ██║     ██║   ██║   
+██████╔╝╚██████╔╝██║ ╚████║██║██║     ██║███████╗██║  ██║    ╚██████╗╚██████╔╝██╗
+╚═════╝  ╚═════╝ ╚═╝  ╚═══╝╚═╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝     ╚═════╝ ╚═════╝ ╚═╝
+                                                                                 
+Website developed by Bonifier Co. (bonifier.com.hk)
+
+Developers? Tell us why you are interested in our codes!
+
+talent 'at' bonifier.com.hk
+-->
+
+<head>
+
+    <title>Lifely. Dreamer</title>
+
+    <!-- General META -->
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Semantic META -->
+    <meta name="keywords" content="Lifely,Dreamer,T-shirt,Tee,Fashion,Startup,Designer,Portfolio,Social Network">
+    <meta name="description" content="Introducing Lifely. The designer social network which promotes your passionate ideas to the rest of the world.">
+
+    <!-- Facebook META -->
+    <meta property="fb:app_id" content="586408494785622">
+    <meta property="og:site_name" content="Lifely. Dreamer">
+    <meta property="og:title" content="Lifely. Dreamer">
+    <meta property="og:description" content="Introducing Lifely. The designer social network which promotes your passionate ideas to the rest of the world.">
+    <meta property="og:url" content="http://lifelydreamer.com/">
+    <meta property="og:image" content="/img/lifely_logo_box.png">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter META -->
+    <meta name="twitter:title" content="Lifely. Dreamer">
+    <meta name="twitter:description" content="Introducing Lifely. The designer social network which promotes your passionate ideas to the rest of the world.">
+    <meta name="twitter:url" content="http://lifelydreamer.com/">
+    <meta name="twitter:image" content="/img/lifely_logo_box.png">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" ng-controller="PageController">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <span class="light">LD</span> <span>|</span> Lifely. <span class="light">Dreamer</span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Our Story</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about2">Your Dream</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Team</a>
+                    </li>
+                    <!--
+                    <li>
+                        <a>Partnerships</a>
+                    </li>
+                    -->
+                    <!--
+					<li>
+						<a>Media</a>
+					</li>
+					-->
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro" id="introHeader">
+        <div class="tranglify-bg">
+            <img ng-trianglify-animate pos-ref-id="introHeader" id="tranglify-bg">
+        </div>
+        <div class="intro-body" ng-style="style()" centerize>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">
+							<a href="http://www.lifely.com.hk/" title="Lifely.">
+								<img src="img/lifely_logo.svg" style="width: 100%; max-width: 400px" alt="Lifely." />
+							</a>
+						</h1>
+                        <p class="intro-text black-font">Introducing Lifely.
+                            <br />The designer social network which promotes your passionate ideas to the rest of the world.</p>
+                        <ul class="list-inline banner-social-buttons">
+                            <!--
+                            <li>
+                                <a href="http://www.lifely.com.hk" title="Enter Lifely.com.hk" class="btn btn-circle black-border">
+                                    <i class="fa fa-angle-double-right animated black-font"></i>
+                                </a><span class="btn-circle-label intro-text black-font">Enter <a href="http://www.lifely.com.hk" style="color: black" title="Enter Lifely.com.hk">Lifely.com.hk</a></span>
+                            </li>
+                            -->
+                            <li>
+                                <a href="#about" class="btn btn-circle page-scroll black-border">
+                                    <i class="fa fa-angle-double-down animated black-font"></i>
+                                </a><span class="btn-circle-label intro-text black-font">Company Info</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Our Story</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <span>
+                            Art is in our personality. Art is in our blood. Art is without boundaries. We believe that everyone is an artist. We strongly believe that you are the reason we exist.<br /><br />
+                            Lifely was established by a group of art enthusiasts. We believe in art. We dedicate our lives to making a change in the art industry in Asia.<br /><br />
+                            We hope to provide this platform to artists so that they can gain exposure to and get appreciation from all others. At the same time, we hope artists can inspire others through the form of art.<br /><br />
+                            Everyone around the world is welcome to join our venture. We hope to see your inspiration through the form of art. Email us your masterpieces and ideas at <a href="mailto:info@lifelydreamer.com" title="Email Us">info@lifelydreamer.com</a>
+                        </span>
+                    </div>
+                    <div class="col-md-6">
+                        <span>
+                            藝術始於生活，感覺，本性。藝術沒有標準，沒有界限。人人都可以成為藝術家，而你們是我們存在的理由。<br /><br />
+                            優活有限公司是由一班對藝術充滿熱情的夢想家所成立！我們沒有任何特別，只是比其他人更熱愛藝術。我們致力於支持藝術發展，讓所有藝術家有更多的機遇拓展他們的創意藝術空間。我們會運用我們的網絡資源，各方面的專業能力，和所有方法支持我們的藝術家。而在我們的每件產品上也會附上藝術家的名字，我們會盡可能宣傳藝術家的名字，因為我們樂於見證您的成功。<br /><br />
+                            我們歡迎大家成為我們的夥伴。如果您想與我們分享任何構思想法或與我們合作，請發送電郵到 <a href="mailto:info@lifelydreamer.com" title="Email Us">info@lifelydreamer.com</a><br /><br />
+                            「我們希望為世界上的藝術家做出更大的貢獻，只因我們相信每一件藝術作品也是同等貴重，所有藝術家也應得到同等尊重。」
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about2" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Your Dream</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <span>
+                            We are all dreamers. We all have our unique thoughts which we desire to express to the whole world.<br /><br />
+                            Lifely is the platform to make your dreams come true! By uploading your graphic designs or photography works to this platform, you have an unparalleled chance to share your masterpieces to the public, discuss your ideas, and gather your crowd.<br /><br />
+                            We will help you produce products, such as T-shirts, based on your great artworks and sell them via our on-line store. We believe that your fans will help you spread your name and your idea even further. You will also gain revenue from the sales.<br /><br />
+                            Lifely has launched its upload function. Please click the following link to register and submit your masterpieces. The faster you submit, the sooner they will be turned into real products!
+                        </span>
+                    </div>
+                    <div class="col-md-6">
+                        <span>
+                            我們都有一個夢想，希望自己獨特的想法能與世界上的人分享，找尋並影響志同道合的人。<br /><br />
+                            Lifely 是一個可以讓您夢想成真的地方！只要上載您的繪畫、攝影作品等來到此平台，您便能夠將它們分享給大眾，與他們討論作品的意念，並聚集支持者。<br /><br />
+                            我們更會協助您將設計製成 T 恤等產品，讓您的支持者購買。他們會把您的大名和您的意念傳達得更廣更遠，而您更可以從銷售中取得可觀的分紅。<br /><br />
+                            請立即參閱以下指示並上載您的大作。設計愈早上載，我們會愈早把它製成產品！<br /><br />
+                            就讓我們攜手同步，因為我們都有同一個夢想。
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Our Team</h2>
+                    <div class="row">
+                        <div class="col-md-4" align="center"><div class="circular"></div>
+                            Angus Lai<br />CEO<br />
+                            <a href="https://angel.co/angus-lai" target="_blank" title="Angus Lai's AngelList"><i class="fa fa-angellist"></i></a>&nbsp;
+                            <a href="https://www.linkedin.com/in/anguslai" target="_blank" title="Angus Lai's LinkedIn"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                        <div class="col-md-4" align="center"><div class="circular"></div>
+                            Nathan Lo<br />Business Development<br />
+                        </div>
+                        <div class="col-md-4" align="center"><div class="circular"></div>
+                            Marco Yu<br />Marketing<br />
+                            <a href="http://hk.linkedin.com/pub/marco-yu/15/153/3b5/en" target="_blank" title="Marco Yu's LinkedIn"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 50px">
+                        <div class="col-md-4" align="center"><div class="circular" style="background-image: url(/img/thomas_tong.jpg);"></div>
+                            Thomas Tong<br />Information Technology<br />
+                            <a href="https://angel.co/thomas-tong" target="_blank" title="Thomas Tong's AngelList"><i class="fa fa-angellist"></i></a>&nbsp;
+                            <a href="https://www.linkedin.com/in/thomasmktong" target="_blank" title="Thomas Tong's LinkedIn"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                        <div class="col-md-4" align="center"><div class="circular"></div>
+                            Angela Law<br />Operations<br />
+                        </div>
+                        <!--
+                        <div class="col-md-4" align="center"><div class="circular" style="background-image: url(/img/uncle_sam.jpg);"></div>
+                            WE NEED YOU!
+                        </div>
+                        -->
+                    </div>
+                    <!--
+                    <a href="#" class="btn btn-default btn-lg">Visit Testing Page</a>
+                    -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>Contact Us</h2>
+                <p>Feel free to email us to provide some feedback, give us suggestions, or to just say hello!</p>
+                <p><a href="mailto:info@lifelydreamer.com">info@lifelydreamer.com</a>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://www.facebook.com/lifelydreamer" target="_blank" title="Lifely's Facebook" class="btn btn-default btn-lg"><i class="fa fa-facebook-official fa-fw"></i> <span class="network-name">Facebook</span></a>
+                    </li>
+                    <li>
+                        <a href="https://angel.co/lifely-dreamer" target="_blank" title="Lifely's AngelList" class="btn btn-default btn-lg"><i class="fa fa-angellist fa-fw"></i> <span class="network-name">AngelList</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/lifely-dreamer-ltd-" target="_blank" title="Lifely's LinkedIn" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
+                    </li>
+                    <li>
+                        <a href="http://weibo.com/u/3681922937" target="_blank" title="Lifely's Weibo" class="btn btn-default btn-lg"><i class="fa fa-weibo fa-fw"></i> <span class="network-name">Weibo</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <!--
+    <div id="map"></div>
+    -->
+
+    <!-- Footer -->
+    <footer style="padding-top: 100px">
+        <div class="container text-center">
+            <span><small>Copyright</small></span> <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span> <span><small>{{currentYear}}, <a href="http://www.lifelydreamer.com/" title="Lifely Dreamer Ltd.">Lifely Dreamer Ltd.</a><br />IT Partnership with <a href="http://www.bonifier.com.hk/" title="Bonifier Co.">Bonifier Co.</a></small></span>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Angular JS -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <!--
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+    -->
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+    <!-- D3.js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+
+    <!-- Tranglify -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.1.5/trianglify.min.js"></script>
+
+    <!-- Modified Angular Tranglify Animate -->
+    <script type="text/javascript" src="js/trianglify.animate.js"></script>
+
+    <!-- Controller of this page -->
+    <script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>
